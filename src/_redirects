@@ -1,0 +1,14 @@
+# PerfectXML legacy URL reactivation
+/411/DirDetails.asp     /411/    301
+/411/default.asp        /411/    301
+/411/index.html         /411/    301
+/411/                   /411/    200
+/Announcements.asp      /blog/   301
+/ANN.asp                /blog/   301
+/articles.asp           /blog/   301
+/Articles.asp           /blog/   301
+/Articles/*             /blog/   301
+/articles/*             /blog/   301
+/Answers.asp            /411/    301
+/adodotnetxml.asp       /blog/   301
+/xml/*                  /blog/   301
