@@ -1,0 +1,24 @@
+---
+layout: base.njk
+permalink: /
+title: PerfectXML — Data Formats & Developer Resources
+description: Guides, tools and a curated directory for XML, JSON, YAML and modern API data formats. Continuing the PerfectXML directory since 2000.
+---
+
+<p>PerfectXML started in 2000 as one of the web's go-to directories for XML resources. Two decades later, the data-format landscape has grown — XML, JSON, YAML, and the APIs that move all of it. This revival keeps the original mission: <strong>point developers at the good stuff</strong>.</p>
+
+<h2>Start here</h2>
+<ul>
+<li><a href="/411/">The 411 Directory</a> — our curated list of data-format specs, validators and CLI tools (the page that made this site famous in the XML era, now updated).</li>
+<li><a href="/blog/">Articles</a> — practical guides on XML, JSON, YAML and API payload design.</li>
+<li><a href="/zh/">中文版</a> — the same resources, in Chinese.</li>
+</ul>
+
+<h2>Latest articles</h2>
+<ul>
+{% for post in collections.indexableEn | limit(8) %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> <small style="color:#64748b">{{ post.date | readableDate }}</small></li>
+{% else %}
+  <li>Articles are being prepared — check back soon.</li>
+{% endfor %}
+</ul>
