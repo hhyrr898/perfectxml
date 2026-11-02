@@ -1,0 +1,24 @@
+---
+layout: base-zh.njk
+permalink: /zh/
+title: PerfectXML 中文站 — XML/JSON/YAML 数据格式教程与资源目录
+description: PerfectXML 目录的中文版：XML、JSON、YAML 与 API 数据格式的教程、工具和资源整理，持续更新。
+---
+
+<p>PerfectXML 从 2000 年起就是网络上知名的 XML 资源目录。二十年过去，数据格式的世界扩展到了 JSON、YAML 和各种 API 载荷——这次复活延续原来的使命：<strong>把好东西指给开发者</strong>。</p>
+
+<h2>从这里开始</h2>
+<ul>
+<li><a href="/zh/411/">411 资源目录</a> — 精选的数据格式规范、校验工具与命令行工具清单（当年让本站出名的那一页，现已更新）。</li>
+<li><a href="/zh/blog/">文章</a> — XML、JSON、YAML 与 API 数据设计的实操教程。</li>
+<li><a href="/">English</a> — 英文原版。</li>
+</ul>
+
+<h2>最新文章</h2>
+<ul>
+{% for post in collections.indexableZh | limit(8) %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> <small style="color:#64748b">{{ post.date | readableDate }}</small></li>
+{% else %}
+  <li>文章整理中，稍后回来。</li>
+{% endfor %}
+</ul>
