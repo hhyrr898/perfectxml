@@ -1,0 +1,18 @@
+---
+layout: base-zh.njk
+permalink: /zh/411/
+title: 411 资源目录 — 数据格式规范、校验工具与命令行工具
+description: 复活的 PerfectXML 411 目录：XML、JSON、YAML 与 API 资源的精选清单。
+---
+
+<p>这是复活的 <strong>PerfectXML 411 目录</strong>——当年让本站成为 XML 时代书签的那份精选资源清单。下面每一条都指向官方规范、持续维护的工具或值得收藏的参考，会持续更新。</p>
+
+<h2>规范与参考</h2>
+<ul>
+{% for item in dir411Zh %}
+  <li><a href="{{ item[1] }}" target="_blank" rel="noopener">{{ item[0] }}</a> — {{ item[2] }}</li>
+{% endfor %}
+</ul>
+
+<h2>使用说明</h2>
+<p>条目会定期复查，死链和停更项目会被清理。建议可以通过<a href="/zh/about/">关于页</a>的渠道反馈。English version: <a href="/411/">here</a>。</p>
