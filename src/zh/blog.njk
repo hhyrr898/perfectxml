@@ -1,0 +1,15 @@
+---
+layout: base-zh.njk
+permalink: /zh/blog/
+title: 全部文章 — PerfectXML 中文站
+description: XML、JSON、YAML 与 API 数据格式的中文教程合集。
+---
+
+<h2 style="margin-top:0">全部文章</h2>
+<ul>
+{% for post in collections.indexableZh %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a> <small style="color:#64748b">{{ post.date | readableDate }}</small></li>
+{% else %}
+  <li>暂无收录文章。</li>
+{% endfor %}
+</ul>
