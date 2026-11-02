@@ -1,0 +1,20 @@
+{
+ "brand": "PerfectXML",
+ "domain": "perfectxml.com",
+ "locale": "en",
+ "blogDir": "src/posts",
+ "slugPrefix": "px",
+ "keywordsPath": "src/keywords-en.json",
+ "linkPool": [],
+ "minChars": 750,
+ "maxChars": 2200,
+ "fm": {
+  "layout": "article.njk",
+  "hasCategory": false,
+  "tagsStyle": "json",
+  "firstTag": "post",
+  "permalink": true,
+  "coverKey": null,
+  "coverDir": ""
+ }
+}
