@@ -1,0 +1,14 @@
+{
+  "brand": "PerfectXML",
+  "domain": "perfectxml.com",
+  "url": "https://perfectxml.com",
+  "title": "PerfectXML — Data Formats & Developer Resources",
+  "description": "Guides and curated resources for XML, JSON, YAML and modern data formats, continuing the PerfectXML directory tradition since 2000.",
+  "keywords": "XML,JSON,YAML,data formats,developer resources,API",
+  "locale": "en_US",
+  "author": "PerfectXML Editorial",
+  "ogImage": "/assets/logo.svg",
+  "assetVersion": "1",
+  "laId": "",
+  "lang": "en"
+}
