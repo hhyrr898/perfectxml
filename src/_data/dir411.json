@@ -1,0 +1,92 @@
+[
+ [
+  "MDN Web Docs — XML",
+  "https://developer.mozilla.org/en-US/docs/Web/XML",
+  "Comprehensive XML reference from Mozilla."
+ ],
+ [
+  "W3C XML Specifications",
+  "https://www.w3.org/XML/",
+  "The official XML standards and specifications."
+ ],
+ [
+  "JSON Official Site",
+  "https://www.json.org/json-en.html",
+  "The original JSON specification and grammar."
+ ],
+ [
+  "YAML Specification",
+  "https://yaml.org/spec/1.2.2/",
+  "YAML 1.2 specification and release notes."
+ ],
+ [
+  "XML to JSON Converter",
+  "https://codebeautify.org/xmltojson",
+  "Free online conversion tool with preview."
+ ],
+ [
+  "XPath Tester",
+  "https://www.freeformatter.com/xpath-tester.html",
+  "Test XPath expressions against live XML."
+ ],
+ [
+  "XML Schema (XSD) Tutorial",
+  "https://www.w3schools.com/xml/schema_intro.asp",
+  "Beginner-friendly XSD guide with examples."
+ ],
+ [
+  "jq — JSON Processor",
+  "https://jqlang.github.io/jq/",
+  "The standard command-line JSON tool."
+ ],
+ [
+  "yq — YAML Processor",
+  "https://github.com/mikefarah/yq",
+  "jq-style processing for YAML and XML."
+ ],
+ [
+  "XML Validation Service",
+  "https://xmlvalidation.com/",
+  "Validate XML against DTD or XSD online."
+ ],
+ [
+  "REST API Tutorial",
+  "https://restfulapi.net/",
+  "Everything about REST APIs and payload formats."
+ ],
+ [
+  "Postman API Platform",
+  "https://www.postman.com/",
+  "Test and document API requests."
+ ],
+ [
+  "Swagger / OpenAPI",
+  "https://swagger.io/specification/",
+  "The API description format standard."
+ ],
+ [
+  "XMLStarlet CLI",
+  "https://xmlstar.sourceforge.net/",
+  "Command-line XML processing toolkit."
+ ],
+ [
+  "jsonschema Validation",
+  "https://json-schema.org/",
+  "Schema standard for JSON documents."
+ ],
+ [
+  "Base64 Encode/Decode",
+  "https://www.base64encode.org/",
+  "Handy for debugging embedded payloads."
+ ],
+ [
+  "CSV to JSON",
+  "https://www.csvjson.com/csv2json",
+  "Convert spreadsheets to structured JSON."
+ ],
+ [
+  "XMLLint",
+  "http://xmlsoft.org/xmllint.html",
+  "libxml2 command-line validator and formatter."
+ ]
+]
