@@ -1,0 +1,18 @@
+---
+layout: base.njk
+permalink: /411/
+title: The 411 Directory — Data Format Specs, Validators & Tools
+description: The revived PerfectXML 411 directory — a curated list of XML, JSON, YAML and API resources for developers.
+---
+
+<p>This is the revived <strong>PerfectXML 411 directory</strong> — the curated resource list that made this site a bookmark in the XML era. Every entry below points to an official spec, a maintained tool, or a reference worth keeping. Updated continuously.</p>
+
+<h2>Specs &amp; References</h2>
+<ul>
+{% for item in dir411 %}
+  <li><a href="{{ item[1] }}" target="_blank" rel="noopener">{{ item[0] }}</a> — {{ item[2] }}</li>
+{% endfor %}
+</ul>
+
+<h2>Using this directory</h2>
+<p>Entries are reviewed periodically; dead links and abandoned projects are pruned. Suggestions are welcome through the <a href="/about/">about page</a>. 中文版见 <a href="/zh/411/">这里</a>。</p>
