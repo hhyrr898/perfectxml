@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title or zhSite.title }}</title>
+<meta name="description" content="{{ description or zhSite.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta name="robots" content="{% if noindex %}noindex,follow{% else %}index,follow,max-image-preview:large{% endif %}">
+<meta property="og:title" content="{{ title or zhSite.title }}">
+<meta property="og:description" content="{{ description or zhSite.description }}">
+<style>
+body{font-family:system-ui,'Microsoft YaHei',sans-serif;margin:0;background:#f8fafc;color:#1e293b;line-height:1.85}
+header{background:#0f172a;color:#fff}
+.wrap{max-width:900px;margin:0 auto;padding:0 18px}
+nav a{color:#cbd5e1;text-decoration:none;margin-right:18px;font-size:14px}
+main{max-width:780px;margin:0 auto;padding:30px 18px 60px}
+h1{font-size:27px}h2{font-size:20px;margin-top:36px;border-left:4px solid #2563eb;padding-left:10px}
+.meta{color:#64748b;font-size:13px;margin-bottom:26px}
+a{color:#1d4ed8}
+footer{background:#0f172a;color:#94a3b8;font-size:13px;padding:26px 0;margin-top:50px}
+.fl{margin-top:12px}.fl a{color:#cbd5e1;margin-right:14px;text-decoration:none}
+code{background:#eef2ff;padding:2px 6px;border-radius:4px;font-size:90%}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #cbd5e1;padding:6px 10px;font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap" style="padding:16px 18px">
+<strong style="margin-right:26px">PerfectXML 中文站</strong>
+<nav style="display:inline"><a href="/zh/">首页</a><a href="/zh/blog/">文章</a><a href="/zh/411/">资源目录</a><a href="/zh/about/">关于</a><a href="/">English</a></nav>
+</div></header>
+<main>
+<h1>{{ title or zhSite.title }}</h1>
+{% if date %}<div class="meta">{{ date | readableDate }}</div>{% endif %}
+{{ content | safe }}
+</main>
+<footer><div class="wrap">
+PerfectXML 中文站 — 数据格式与开发资源目录，源自 2000 年的 PerfectXML 传统。
+{% if friendLinksZh and friendLinksZh.length %}
+<div class="fl">友情链接：
+{% for l in friendLinksZh %}<a href="{{ l.url }}" target="_blank" title="{{ l.title }}">{{ l.title }}</a>{% endfor %}
+</div>
+{% endif %}
+</div></footer>
+</body>
+</html>
