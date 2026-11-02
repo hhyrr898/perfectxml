@@ -1,0 +1,14 @@
+{
+  "brand": "PerfectXML 数据格式中文站",
+  "domain": "perfectxml.com",
+  "url": "https://perfectxml.com",
+  "title": "PerfectXML — XML/JSON/YAML 数据格式中文教程",
+  "description": "XML、JSON、YAML 与 API 数据格式的中文教程、工具推荐和资源目录，PerfectXML 目录的中文版。",
+  "keywords": "XML,JSON,YAML,数据格式,API,开发教程",
+  "locale": "zh_CN",
+  "author": "PerfectXML 中文编辑组",
+  "ogImage": "/assets/logo.svg",
+  "assetVersion": "1",
+  "laId": "",
+  "lang": "zh"
+}
