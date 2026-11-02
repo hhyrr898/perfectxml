@@ -1,0 +1,23 @@
+{
+  "name": "finalshell-pages-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node ./node_modules/@11ty/eleventy/cmd.cjs",
+    "dev": "node ./node_modules/@11ty/eleventy/cmd.cjs --serve --port=8090",
+    "generate:articles": "node scripts/generate-articles.js",
+    "fix:bing-images": "node tools/fix-bing-images.js",
+    "fix:links": "node tools/add-internal-links.js",
+    "mark:generated": "node tools/mark-generated.js",
+    "postprocess": "npm run mark:generated && npm run fix:bing-images && npm run fix:links",
+    "push:bing:updated": "node scripts/push-bing.js --mode=updated",
+    "push:bing:all": "node scripts/push-bing.js --mode=all",
+    "bing:indexnow": "node tools/bing-instant-push.js"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@google/genai": "^1.7.0",
+    "luxon": "^3.7.1"
+  }
+}
