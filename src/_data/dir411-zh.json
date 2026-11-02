@@ -1,0 +1,92 @@
+[
+ [
+  "MDN XML 中文文档",
+  "https://developer.mozilla.org/zh-CN/docs/Web/XML",
+  "Mozilla 官方 XML 参考的中文版。"
+ ],
+ [
+  "W3C XML 规范",
+  "https://www.w3.org/XML/",
+  "XML 官方标准与规范原文。"
+ ],
+ [
+  "JSON 官方站",
+  "https://www.json.org/json-zh.html",
+  "JSON 语法的中文说明页。"
+ ],
+ [
+  "YAML 规范 1.2",
+  "https://yaml.org/spec/1.2.2/",
+  "YAML 1.2 官方规范。"
+ ],
+ [
+  "XML 转 JSON 工具",
+  "https://codebeautify.org/xmltojson",
+  "在线转换并预览结果。"
+ ],
+ [
+  "XPath 在线测试",
+  "https://www.freeformatter.com/xpath-tester.html",
+  "对真实 XML 调试 XPath 表达式。"
+ ],
+ [
+  "XSD 入门教程",
+  "https://www.w3schools.com/xml/schema_intro.asp",
+  "带示例的 XML Schema 入门。"
+ ],
+ [
+  "jq 命令行工具",
+  "https://jqlang.github.io/jq/",
+  "事实标准的命令行 JSON 处理器。"
+ ],
+ [
+  "yq 处理 YAML",
+  "https://github.com/mikefarah/yq",
+  "类 jq 语法的 YAML/XML 处理器。"
+ ],
+ [
+  "XML 校验服务",
+  "https://xmlvalidation.com/",
+  "按 DTD/XSD 在线校验。"
+ ],
+ [
+  "REST API 教程",
+  "https://restfulapi.net/",
+  "REST 接口与数据格式全景。"
+ ],
+ [
+  "Postman 平台",
+  "https://www.postman.com/",
+  "接口调试与文档管理。"
+ ],
+ [
+  "OpenAPI 规范",
+  "https://swagger.io/specification/",
+  "API 描述格式的行业标准。"
+ ],
+ [
+  "XMLStarlet",
+  "https://xmlstar.sourceforge.net/",
+  "命令行 XML 工具集。"
+ ],
+ [
+  "JSON Schema",
+  "https://json-schema.org/",
+  "JSON 文档的校验标准。"
+ ],
+ [
+  "Base64 编解码",
+  "https://www.base64encode.org/",
+  "调试内嵌数据时常用。"
+ ],
+ [
+  "CSV 转 JSON",
+  "https://www.csvjson.com/csv2json",
+  "表格数据结构化转换。"
+ ],
+ [
+  "xmllint 工具",
+  "http://xmlsoft.org/xmllint.html",
+  "libxml2 命令行校验与格式化。"
+ ]
+]
