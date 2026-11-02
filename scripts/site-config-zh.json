@@ -1,0 +1,20 @@
+{
+ "brand": "PerfectXML",
+ "domain": "perfectxml.com",
+ "locale": "zh-CN",
+ "blogDir": "src/posts-zh",
+ "slugPrefix": "px",
+ "keywordsPath": "src/keywords-zh.json",
+ "linkPool": [],
+ "minChars": 750,
+ "maxChars": 2200,
+ "fm": {
+  "layout": "article-zh.njk",
+  "hasCategory": false,
+  "tagsStyle": "yaml",
+  "firstTag": null,
+  "permalink": true,
+  "coverKey": null,
+  "coverDir": ""
+ }
+}
