@@ -1,0 +1,53 @@
+name: Daily Articles (EN+ZH) & Deploy
+
+on:
+  schedule:
+    - cron: '37 0 * * *'
+  workflow_dispatch:
+    inputs:
+      post_count:
+        description: '每次语言各生成篇数 1-5'
+        required: true
+        default: '1'
+
+jobs:
+  generate-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: npm ci || npm install
+      - name: Generate EN article
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+        run: node scripts/generate-articles-v2.mjs --count=${{ github.event.inputs.post_count || '1' }}
+      - name: Generate ZH article
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ secrets.OPENROUTER_MODEL }}
+        run: node scripts/generate-articles-v2.mjs --config=scripts/site-config-zh.json --count=${{ github.event.inputs.post_count || '1' }}
+      - name: Commit & Push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "px-bot"
+          git config user.email "bot@perfectxml.com"
+          git add src/posts src/posts-zh src/keywords-en.json src/keywords-zh.json
+          if ! git diff --cached --quiet; then
+            git commit -m "bot: daily en+zh articles"
+            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+          fi
+      - name: Build
+        run: npm run build
+      - name: Deploy to Cloudflare Workers (assets)
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
